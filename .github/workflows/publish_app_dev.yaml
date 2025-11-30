@@ -19,6 +19,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: dev
+          submodules: false
 
       # APK签名设置
       - name: Download Android keystore
