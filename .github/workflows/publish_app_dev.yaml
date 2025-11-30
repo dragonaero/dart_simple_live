@@ -23,6 +23,7 @@ jobs:
 
       # APK签名设置
       - name: Download Android keystore
+        if: false
         id: android_keystore
         uses: timheuer/base64-to-file@v1.2
         with:
@@ -69,6 +70,7 @@ jobs:
 
       # 打包APK
       - name: Build APK
+        if: false
         run: |
           cd simple_live_app
           flutter build apk --release --split-per-abi
